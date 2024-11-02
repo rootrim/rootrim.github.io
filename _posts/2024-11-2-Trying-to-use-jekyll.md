@@ -3,7 +3,7 @@ layout: post
 title: "First post"
 subtitle: "Why using this so difficult?"
 author: "HynDuf"
-header-img: # "assets/wallpaper-sea.png"
+header-img: "assets/wallpaper-sea.png"
 header-mask: 0.4
 multilingual: true
 tags:
