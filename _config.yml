@@ -6,7 +6,7 @@ email: omuaz01@gmail.com
 description: "The greatest enemy of Kendirli!"
 keyword: "hynduf, rootrim, rootrim's Blog, Arch Linux, Neovim"
 url: "https://rootrim.github.io" # your host, for absolute URL
-baseurl: "/rootrim.github.io" # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -39,7 +39,6 @@ anchorjs: true # if you want to customize anchor. check out line:181 of `post.ht
 # `$ gem install jekyll-paginate`
 plugins:
   - jekyll-paginate
-  - jekyll-feed
 
 
 
