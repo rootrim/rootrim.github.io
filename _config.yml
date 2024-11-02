@@ -39,6 +39,7 @@ anchorjs: true # if you want to customize anchor. check out line:181 of `post.ht
 # `$ gem install jekyll-paginate`
 plugins:
   - jekyll-paginate
+  - jekyll-feed 
 
 
 

@@ -3,29 +3,31 @@ layout: default
 ---
 
 <div class="animated-text">
-    <img src="img/catppuccin-cat-footer.png" alt="cat-footer">
-    <div>
-        <i>"In the end, would it all be worth it?"</i> 
-        <p>~ 🌸🐳 HynDuf</p>
-        <div class='header-line'>
-            <strong> ━━━━━━  ❖  ━━━━━━ </strong>
-        </div>
-</div>
+  <img src="img/catppuccin-cat-footer.png" alt="cat-footer" />
+  <div>
+    <i>"If there is a rock on your way, kick it hard!"</i>
+    <p>~🤓 rootrim</p>
+    <div class="header-line">
+      <strong> ━━━━━━ 😼 ━━━━━━ </strong>
+    </div>
+  </div>
 </div>
 <!-- Main Content -->
 <div class="container">
-<div class="row">
-{% if site.sidebar == false %}
-<!-- NO SIDEBAR -->
-<!-- PostList Container -->
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1
-      postlist-container">
+  <div class="row">
+    {% if site.sidebar == false %}
+    <!-- NO SIDEBAR -->
+    <!-- PostList Container -->
+    <div
+      class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container"
+    >
       {{ content }}
     </div>
-    <div> </div>
+    <div></div>
     <!-- Sidebar Container -->
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1
-      sidebar-container">
+    <div
+      class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container"
+    >
       <!-- Featured Tags -->
       {% include featured-tags.html %}
 
@@ -36,13 +38,15 @@ layout: default
 
     <!-- USE SIDEBAR -->
     <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
+    <div
+      class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 postlist-container"
+    >
       {{ content }}
     </div>
     <!-- Sidebar Container -->
-    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
+    <div
+      class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12 col-xs-12 sidebar-container"
+    >
       <!-- Short About -->
       {% include short-about.html %}
 
@@ -74,6 +78,8 @@ layout: default
     }
   });
 </script>
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+></script>
 {% endif %}
