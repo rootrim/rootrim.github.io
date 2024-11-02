@@ -8,7 +8,7 @@ Hello people, I'm Trim.
 - 📫 Fun fact:
   - ⚡ I use Arch btw.
   - 💎 I love Neovim.
-  - 🤬 Kendirli is my gratest enemy.
+  - 🤬 Kendirly is my gratest enemy.
   - 👨‍💻 I mainly code in Python and C but I'm still a junior dev.
 
 # ABOUT THIS WEBSITE

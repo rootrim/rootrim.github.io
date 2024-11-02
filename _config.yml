@@ -1,10 +1,10 @@
 # Site settings
 title: "🤫🧏 \  rootrim \  👋"
-SEOTitle: rootrim Blog
-header-img: # img/hollow-knight.png
+SEOTitle: rootrim's Blog
+header-img: img/hollow-knight.png
 email: omuaz01@gmail.com
-description: "The greatest enemy of Kendirli!"
-keyword: "hynduf, rootrim, rootrim's Blog, Arch Linux, Neovim"
+description: "The greatest enemy of Kendirly!"
+keyword: "rootrim, hynduf, blog, rootrim's Blog, Arch Linux, Neovim"
 url: "https://rootrim.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -62,7 +62,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "Gazoz kapağı, <br/>vs gel Kendirli"
+sidebar-about-description: "The greatest enemy of Kendirly"
 # sidebar-avatar: https://github.com/hynduf.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
