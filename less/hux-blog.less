@@ -27,6 +27,7 @@ body {
 
 p {
   margin: 10px 0;
+
   @media screen and (max-width: 768px) {
     & {
       margin: 25px 0;
@@ -44,11 +45,14 @@ h6 {
   line-height: 1.1;
   font-weight: bold;
 }
+
 h4 {
   font-size: 21px;
 }
+
 a {
   color: var(--main-text-color);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -56,6 +60,7 @@ a {
 }
 
 a img {
+
   &:hover,
   &:focus {
     cursor: zoom-in;
@@ -71,7 +76,8 @@ blockquote {
   font-style: italic;
   font-size: 1em;
   margin: 20px 0 20px;
-  border-left:4px solid var(--overlay1-color);
+  border-left: 4px solid var(--overlay1-color);
+
   p {
     margin: 0;
   }
@@ -83,12 +89,15 @@ small.img-hint {
   margin-top: -20px;
   text-align: center;
 }
-br + small.img-hint {
+
+br+small.img-hint {
   margin-top: -40px;
 }
+
 img.shadow {
   box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
+
 // Utils Style End
 
 // Select
@@ -101,6 +110,7 @@ img.shadow {
   border-radius: 10px;
   padding: 0 0 0 10px;
   background: var(--main-background-color);
+
   &.sel-lang {
     min-height: 28px;
     font-size: 16px;
@@ -109,13 +119,14 @@ img.shadow {
 }
 
 select {
-    text-align: center;
-    vertical-align: baseline;
+  text-align: center;
+  vertical-align: baseline;
   color: var(--accent-color-deep);
   border: none;
   padding: 0 5px;
   margin: 0em 5px;
   background: var(--main-background-color);
+
   &.sel-lang {
     min-height: 28px;
     font-size: 16px;
@@ -127,13 +138,16 @@ select {
 table {
   margin-top: 10px;
 }
-table.table > tbody,
-table.table > thead {
+
+table.table>tbody,
+table.table>thead {
+
   th,
   td {
     border: 1px solid #eee !important;
   }
 }
+
 @media screen and (max-width: 767px) {
   .table-responsive {
     border: 0;
@@ -144,24 +158,28 @@ hr {
   border-width: 2px;
   border-color: var(--hr-color);
 }
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
   border-color: var(--main-text-color);
 }
+
 // add by Hux
 pre,
 .table-responsive {
   // sometimes you should use vendor-feature.
   -webkit-overflow-scrolling: touch;
 }
+
 pre code {
   display: block;
   width: auto;
   white-space: pre; // save it but no-wrap;
   word-wrap: normal; // no-wrap
 }
+
 code,
 kbd,
 pre,
@@ -180,12 +198,14 @@ samp {
     // display: inline-block;
     // safari has bugs on word-break on inline elements.
     color: var(--link-color);
+
     // different to @brand-primary
     &:hover,
     &:focus {
       color: var(--accent-color);
     }
   }
+
   h1,
   h2,
   h3,
@@ -201,56 +221,68 @@ samp {
     font-weight: 600;
     color: gray;
   }
+
   h5,
   h6 {
     font-size: 20px;
     font-weight: 600;
     color: gray;
   }
+
   // downscale the font a little bit in mobile
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 30px;
     }
+
     h2 {
       font-size: 22px;
     }
+
     h3 {
       font-size: 20px;
     }
+
     h4 {
       font-size: 19px;
     }
+
     h5,
     h6 {
       font-size: 18px;
     }
   }
+
   ul,
   ol {
     margin-bottom: 20px;
+
     @media screen and (max-width: 768px) {
       & {
         padding-left: 30px;
       }
     }
+
     @media screen and (max-width: 500px) {
       & {
         padding-left: 20px;
       }
     }
   }
+
   ol ol,
   ol ul,
   ul ol,
   ul ul {
     margin-bottom: 5px;
   }
+
   li {
     p {
       margin: 0;
       margin-bottom: 5px;
     }
+
     h1,
     h2,
     h3,
@@ -261,24 +293,30 @@ samp {
       margin-top: 20px;
     }
   }
+
   // V1.6 Hux display title by default.
   .pager li {
     width: 48%;
+
     &.next {
       float: right;
     }
+
     &.previous {
       float: left;
     }
-    > a {
+
+    >a {
       width: 100%;
-      > span {
+
+      >span {
         color: var(--subtext0-color);
         font-weight: normal;
         letter-spacing: 0.5px;
       }
     }
   }
+
   .anchorjs-link {
     // I can not understand this but this made anchor always in the same line as title
     position: absolute;
@@ -290,6 +328,7 @@ samp {
 
 // materialize, mobile only
 @media only screen and (max-width: 767px) {
+
   /**
    * Layout
    * Since V1.6 we use absolute positioning to prevent to expand container-fluid
@@ -306,6 +345,7 @@ samp {
     border-radius: 2px;
     width: 170px;
   }
+
   /**
    * Animation
    * HuxBlog-Navbar using genuine Material Design Animation
@@ -322,10 +362,12 @@ samp {
     -webkit-transform: scaleX(0);
     -webkit-transform-origin: top right;
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.4, 0.99) 0ms;
+
     a {
       font-size: 13px;
       line-height: 28px;
     }
+
     .navbar-collapse {
       // the navbar do height-transition
       height: 0px; // to solve container-mask-tags issue (default state).
@@ -334,14 +376,15 @@ samp {
       transition: transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
       -webkit-transform: scaleY(0);
       -webkit-transform-origin: top right;
-      -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1)
-        0ms;
+      -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
     }
+
     li {
       opacity: 0;
       transition: opacity 100ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
       -webkit-transition: opacity 100ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     }
+
     /**
      *'In' Animation
      */
@@ -351,13 +394,14 @@ samp {
       opacity: 1;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
       -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+
       .navbar-collapse {
         transform: scaleY(1);
         -webkit-transform: scaleY(1);
         transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-        -webkit-transition: -webkit-transform 500ms
-          cubic-bezier(0.23, 1, 0.32, 1);
+        -webkit-transition: -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
       }
+
       li {
         opacity: 1;
         transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 205ms;
@@ -377,16 +421,19 @@ samp {
   width: 100%;
   z-index: 3;
   .sans-serif;
+
   .navbar-brand {
     font-weight: 800;
     // materialize
     color: var(--crust-background-color);
     height: 56px;
     line-height: 25px;
+
     &:hover {
       color: rgba(255, 255, 255, 0.8);
     }
   }
+
   .nav {
     li {
       a {
@@ -395,6 +442,7 @@ samp {
         line-height: 20px;
         font-weight: 800;
         letter-spacing: 1px;
+
         // only highlight in mobile
         &:active {
           background: rgba(0, 0, 0, 0.12);
@@ -402,30 +450,37 @@ samp {
       }
     }
   }
+
   @media only screen and (min-width: 768px) {
     body {
       font-size: 20px;
     }
+
     background-color: var(--crust-background-color);
     border-bottom: 1px solid transparent;
+
     .navbar-brand {
       color: var(--crust-background-color);
       padding: 20px;
       line-height: 20px;
+
       &:hover,
       &:focus {
         color: var(--main-background-color);
       }
     }
+
     .nav {
       li {
         a {
           color: var(--crust-background-color);
           padding: 20px;
+
           &:hover,
           &:focus {
             color: var(--main-background-color);
           }
+
           &:active {
             background: none;
           }
@@ -433,26 +488,32 @@ samp {
       }
     }
   }
+
   &.invert {
     .navbar-toggle {
       &:active {
         background-color: rgba(0, 0, 0, 0.05);
       }
+
       .icon-bar {
         background-color: var(--main-text-color);
       }
     }
+
     .navbar-brand {
       color: var(--main-text-color);
+
       &:hover,
       &:focus {
         color: var(--accent-color);
       }
     }
+
     .nav {
       li {
         a {
           color: var(--main-text-color);
+
           &:hover,
           &:focus {
             color: var(--accent-color);
@@ -461,6 +522,7 @@ samp {
       }
     }
   }
+
   @media only screen and (min-width: 1170px) {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -473,6 +535,7 @@ samp {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
@@ -482,17 +545,21 @@ samp {
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
+
       .navbar-brand {
         color: var(--main-text-color);
+
         &:hover,
         &:focus {
           color: var(--accent-color);
         }
       }
+
       .nav {
         li {
           a {
             color: var(--main-text-color);
+
             &:hover,
             &:focus {
               color: var(--accent-color);
@@ -501,6 +568,7 @@ samp {
         }
       }
     }
+
     &.is-visible {
       /* if the user changes the scrolling direction, we show the header */
       -webkit-transform: translate3d(0, 100%, 0);
@@ -517,51 +585,65 @@ samp {
 .intro-header {
   &.style-text {
     background: none;
+
     .site-heading,
     .post-heading,
     .page-heading {
       padding: 40px 0 20px;
       color: var(--main-text-color);
+
       .subheading {
         margin-bottom: 15px;
       }
     }
   }
+
   background: no-repeat center center;
   background-color: @brand-gray;
   background-attachment: scroll;
   .background-cover;
   // NOTE: Background images are set within the HTML using inline CSS!
-  margin-bottom: 0px; /* 0 on mobile, modify by Hux */
+  margin-bottom: 0px;
+
+  /* 0 on mobile, modify by Hux */
   @media only screen and (min-width: 768px) {
-    margin-bottom: 20px; /* response on desktop */
+    margin-bottom: 20px;
+    /* response on desktop */
   }
+
   .site-heading,
   .post-heading,
   .page-heading {
     padding: 25px 0 35px;
     color: white;
-      .subheading {
-        margin-bottom: 15px;
-      }
+
+    .subheading {
+      margin-bottom: 15px;
+    }
+
     @media only screen and (min-width: 768px) {
-        padding: 60px 0 60px;
+      padding: 60px 0 60px;
     }
   }
+
   // masterialize
   .site-heading {
     padding: 90px 0 70px;
+
     @media only screen and (min-width: 768px) {
       padding: 120px 0;
     }
   }
+
   .site-heading,
   .page-heading {
     text-align: center;
+
     h1 {
       margin-top: 0;
       font-size: 50px;
     }
+
     .subheading {
       .sans-serif;
       font-size: 18px;
@@ -570,22 +652,26 @@ samp {
       font-weight: 300;
       margin: 10px 0 0;
     }
+
     @media only screen and (min-width: 768px) {
       h1 {
         font-size: 80px;
       }
     }
   }
+
   .post-heading {
     h1 {
       font-size: 30px;
       margin-bottom: 24px;
     }
+
     .subheading,
     .meta {
       line-height: 1.1;
       display: block;
     }
+
     .subheading {
       .sans-serif;
       font-size: 17px;
@@ -594,27 +680,33 @@ samp {
       margin: 10px 0 10px 3px;
       margin-top: -5px;
     }
+
     .meta {
       .serif;
       font-style: italic;
       font-weight: 300;
       font-size: 16px;
+
       a {
         color: white;
       }
     }
+
     @media only screen and (min-width: 768px) {
       h1 {
         font-size: 55px;
       }
+
       .subheading {
         font-size: 25px;
       }
+
       .meta {
         font-size: 20px;
       }
     }
   }
+
   .header-img-credit {
     position: absolute;
     bottom: 6px;
@@ -623,9 +715,11 @@ samp {
     opacity: 0.3;
     font-size: 10px;
     z-index: 1;
+
     a {
       color: white;
     }
+
     @media only screen and (min-width: 768px) {
       & {
         font-size: 12px;
@@ -639,21 +733,24 @@ samp {
 // Post Preview Pages (Home Page)
 
 .post-preview {
-  > a {
+  >a {
     color: var(--main-text-color);
+
     &:hover,
     &:focus {
       text-decoration: none;
       color: var(--accent-color);
     }
-    > .post-title {
+
+    >.post-title {
       font-family: @font-serif;
       font-size: 22px;
       line-height: 1.3;
       margin-top: 30px;
       margin-bottom: 8px;
     }
-    > .post-subtitle {
+
+    >.post-subtitle {
       font-family: @font-serif;
       font-size: 17px;
       line-height: 1.3;
@@ -662,15 +759,18 @@ samp {
       margin-bottom: 10px;
     }
   }
-  > .post-meta {
+
+  >.post-meta {
     .serif;
     color: @brand-gray;
     font-size: 16px;
     font-style: italic;
     margin-top: 0;
-    > a {
+
+    >a {
       text-decoration: none;
       color: var(--main-text-color);
+
       &:hover,
       &:focus {
         color: var(--accent-color);
@@ -678,15 +778,17 @@ samp {
       }
     }
   }
+
   @media only screen and (min-width: 768px) {
-    > a {
-      > .post-title {
+    >a {
+      >.post-title {
         font-family: @font-heading;
         font-size: 32px;
         line-height: 1.3;
         margin-bottom: 10px;
       }
-      > .post-subtitle {
+
+      >.post-subtitle {
         font-weight: 600;
         font-family: @font-sans;
         font-size: 18px;
@@ -701,9 +803,11 @@ samp {
   font-size: 16px;
   font-style: italic;
   color: @brand-gray;
+
   &:hover {
     color: var(--accent-color);
   }
+
   @media only screen and (min-width: 768px) {
     font-size: 16px;
   }
@@ -731,16 +835,20 @@ samp {
 footer {
   font-size: 20px;
   padding: 50px 0 65px;
+
   .list-inline {
     margin: 0;
     padding: 0;
   }
+
   .copyright {
     font-size: 14px;
     text-align: center;
     margin-bottom: 0;
+
     a {
       color: var(--accent-color);
+
       &:hover,
       &:focus {
         color: var(--accent-color);
@@ -748,6 +856,7 @@ footer {
     }
   }
 }
+
 // Button Styles
 
 .btn {
@@ -766,6 +875,7 @@ footer {
 }
 
 .btn-default {
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -781,8 +891,9 @@ footer {
   padding: 0px !important;
 
   li {
-    > a,
-    > span {
+
+    >a,
+    >span {
       .sans-serif;
       text-transform: uppercase;
       font-size: 13px;
@@ -791,33 +902,36 @@ footer {
       padding: 10px;
       background-color: var(--main-background-color);
       border-radius: 0;
+
       @media only screen and (min-width: 768px) {
         font-size: 14px;
         padding: 15px 25px;
       }
     }
 
-    > a {
+    >a {
       color: var(--main-text-color);
     }
-    > a:hover,
-    > a:focus {
+
+    >a:hover,
+    >a:focus {
       color: var(--main-background-color);
       background-color: var(--accent-color);
       border: 1px solid var(--accent-color);
 
       // V1.6 display title
-      > span {
+      >span {
         color: var(--main-background-color);
       }
     }
   }
 
   .disabled {
-    > a,
-    > a:hover,
-    > a:focus,
-    > span {
+
+    >a,
+    >a:hover,
+    >a:focus,
+    >span {
       color: @brand-gray;
       background-color: var(--main-text-color);
       cursor: not-allowed;
@@ -853,15 +967,19 @@ img::-moz-selection {
 .d-none {
   display: none !important;
 }
+
 .tags {
   margin-bottom: 5px;
   margin-left: 2px;
+
   &.tags-sup {
+
     a,
     .tag {
       padding: 0 10px 0 12px;
     }
   }
+
   a,
   .tag {
     display: inline-block;
@@ -874,16 +992,19 @@ img::-moz-selection {
     text-decoration: none;
     margin: 0 1px;
     cursor: pointer;
-    > sup {
+
+    >sup {
       margin-left: -2px;
       font-weight: 700;
     }
+
     &:hover,
     &:active {
       color: var(--crust-background-color);
       border-color: var(--main-text-color);
       text-decoration: none;
     }
+
     @media only screen and (min-width: 768px) {
       margin-right: 5px;
     }
@@ -892,13 +1013,16 @@ img::-moz-selection {
 
 #tag-heading {
   padding: 70px 0 60px;
+
   @media only screen and (min-width: 768px) {
     padding: 55px 0;
   }
 }
+
 // tag_cloud
 #tag_cloud {
   margin: 20px 0 15px 0;
+
   a,
   .tag {
     transition-property: all;
@@ -912,18 +1036,22 @@ img::-moz-selection {
     margin: 0 2px;
     margin-bottom: 8px;
     background: var(--main-background-color);
+
     &:hover,
     &:active,
     &.focus {
       background-color: var(--accent-color) !important;
     }
+
     &.focus {
       box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px,
         rgba(0, 0, 0, 0.239216) 0 1px 4px;
     }
+
     &.tag-button--all {
       font-weight: 700;
       color: var(--accent-color-deep) !important;
+
       &:hover,
       &:active,
       &.focus {
@@ -932,6 +1060,7 @@ img::-moz-selection {
       }
     }
   }
+
   @media only screen and (min-width: 768px) {
     margin-bottom: 25px;
   }
@@ -939,26 +1068,32 @@ img::-moz-selection {
 
 .tag-comments {
   font-size: 12px;
+
   @media only screen and (min-width: 768px) {
     font-size: 14px;
   }
 }
 
 .t {
+
   //margin-top: 50px;
   &:first-child {
     margin-top: 0px;
   }
+
   hr:last-of-type {
     //display: none;
   }
 }
+
 .listing-seperator {
   color: var(--accent-color-deep);
   font-size: 21px !important;
+
   &::before {
     margin-right: 5px;
   }
+
   @media only screen and (min-width: 768px) {
     font-size: 20px !important;
     line-height: 2 !important;
@@ -968,23 +1103,28 @@ img::-moz-selection {
 // Customize Style for Posts in Mini-Post-List
 .mini-post-list {
   margin: 20px 0 15px 0;
+
   .tag-text {
     font-weight: 200;
     .sans-serif;
   }
+
   .post-preview {
     position: relative;
-    > a {
+
+    >a {
       .post-title {
         font-size: 16px;
         font-weight: 500;
         margin-top: 20px;
       }
+
       .post-subtitle {
         font-size: 13px;
       }
     }
-    > .post-meta {
+
+    >.post-meta {
       position: absolute;
       right: 5px;
       bottom: 0px;
@@ -992,17 +1132,21 @@ img::-moz-selection {
       font-size: 12px;
       line-height: 12px;
     }
+
     @media only screen and (min-width: 768px) {
       margin-left: 20px;
-      > a {
-        > .post-title {
+
+      >a {
+        >.post-title {
           font-size: 18px;
           line-height: 1.3;
         }
-        > .post-subtitle {
+
+        >.post-subtitle {
           font-size: 14px;
         }
       }
+
       .post-meta {
         font-size: 18px;
       }
@@ -1022,10 +1166,12 @@ img::-moz-selection {
 
 /* Hux Optimize UserExperience */
 .navbar-default .navbar-toggle {
+
   &:focus,
   &:hover {
     background-color: inherit;
   }
+
   &:active {
     background-color: rgba(255, 255, 255, 0.25);
   }
@@ -1040,13 +1186,15 @@ img::-moz-selection {
   margin-right: 2px;
   margin-bottom: 2px;
   border-radius: 50%;
+
   .icon-bar {
     width: 18px;
     border-radius: 0px;
     // materialize
     background-color: white;
   }
-  .icon-bar + .icon-bar {
+
+  .icon-bar+.icon-bar {
     margin-top: 3px;
   }
 }
@@ -1060,6 +1208,7 @@ img::-moz-selection {
   width: 100%;
   height: 100%;
 }
+
 .page-fullscreen #tag-heading {
   position: fixed;
   left: 0;
@@ -1082,6 +1231,7 @@ img::-moz-selection {
   justify-content: center;
   flex-direction: column;
 }
+
 .page-fullscreen footer {
   position: absolute;
   width: 100%;
@@ -1090,12 +1240,15 @@ img::-moz-selection {
   opacity: 0.6;
   color: #fff;
 }
+
 .page-fullscreen footer .copyright {
   color: #fff;
 }
+
 .page-fullscreen footer .copyright a {
   color: #fff;
 }
+
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
 }
