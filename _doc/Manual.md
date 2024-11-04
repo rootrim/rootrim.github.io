@@ -318,4 +318,3 @@ Make sure you installed it via plain `gem` CLI or Bundler.
 - Using [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 - Using Baidu, Tencent/QQ analytics
 - Using [DuoShuo](http://duoshuo.com/) as the Disqus-like third party discussion system
-

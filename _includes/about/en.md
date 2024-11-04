@@ -13,7 +13,7 @@ Hello people, I'm Trim.
 
 # ABOUT THIS WEBSITE
 
-This is a heavily-customized [fork](https://github.com/HynDuf/hynduf.github.io) of the incredible [Hux Blog - Jekyll Theme](https://github.com/Huxpro/huxpro.github.io).  
+This site is a fork of [HynDuf](https://github.com/HynDuf/hynduf.github.io)'s amazing repo.  
 I did this blog page because of my writing project.
 
 # CONTACT
